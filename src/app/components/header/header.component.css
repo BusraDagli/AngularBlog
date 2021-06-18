@@ -1,0 +1,49 @@
+.menu {
+  color: indianred;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: papayawhip;
+  justify-content: space-between;
+  font-size: 50px;
+  height: 75px;
+
+}
+
+.options {
+  color: indianred;
+  background-color: blanchedalmond;
+  border-radius: 25px;
+  border: 1px solid;
+  border-color: salmon;
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+  font-size: 20px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.connexion {
+  color:blanchedalmond;
+  background-color: cadetblue;
+  border-radius: 25px;
+  border: 1px solid;
+  border-color: cadetblue;
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+  font-size: 20px;
+  margin: 5px;
+  text-decoration: none;
+}
+.content-home-left {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: sienna;
+  float: left;
+  padding-right: 50px;
+  padding-left: 35px;
+}
+
+.content-home-right {
+  width: 30px;
+  height: 15px;
+}

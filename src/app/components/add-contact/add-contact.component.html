@@ -1,0 +1,48 @@
+
+<h1>You have any questions ?</h1>
+<h4>You can use this form, or contact me with the information below</h4>
+
+<form (ngSubmit)="onSubmit()">
+  <div class="field">
+    <p for="name">Name</p>
+    <input
+    type="text"
+    name="name"
+    [(ngModel)]="name"
+    id="name"
+    class="input"
+    placeholder="Your name">
+  </div>
+  <div class="field">
+    <p for="email">E-mail</p>
+    <input
+    type="email"
+    name="email"
+    [(ngModel)]="email"
+    id="email"
+    class="input"
+    placeholder="Your e-mail">
+  </div>
+  <div class="field">
+    <p for="message">Message</p>
+    <textarea
+    class="textarea"
+    name="message"
+    [(ngModel)]="message"
+    id="message"
+    placeholder="Your message..."></textarea>
+  </div>
+  <button
+    type="submit"
+    value="Save Contact"
+    class="button is-danger is-large">
+    Submit
+  </button>
+
+</form>
+
+<footer>
+  Busra Dagli 2021
+  <br>
+  busra.dagli@versusmind.eu
+</footer>

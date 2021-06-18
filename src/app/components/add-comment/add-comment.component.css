@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower');
+
+div {
+  background-color: blanchedalmond;
+  border: none;
+  text-align: center;
+}
+
+div.comment-section {
+  margin: auto;
+  border-radius: 25px;
+  width:500px;
+  border-style: dotted;
+  border-width: 1px;
+  margin-top: 12px;
+  border-color: rgb(255, 127, 80, 0.8);
+}
+.from {
+  background-color:rgb(243, 134, 122, 0.35);
+  width: 250px;
+  text-align: center;
+  margin:auto;
+  margin-top: 10px;
+  border-radius: 25px;
+  font-style: oblique;
+  font-family: 'Indie Flower', cursive;
+  color:rgb(167, 88, 88);
+}
+
+
+.comments {
+  background-color: rgb(243, 134, 122, 0.4);
+  width: 430px;
+  height: 55px;
+  text-align: center;
+  margin:auto;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  font-style: italic;
+  font-size: 15px;
+  border-radius: 25px;
+  padding: 12.5px;
+  font-family: 'Indie Flower', cursive;
+  color:rgb(167, 88, 88);
+}
+
+.comment-form {
+  color:rgb(167, 88, 88);
+  margin:auto;
+  border-radius:25px;
+  width:50%;
+  background-color:rgb(243, 134, 122, 0.5) ;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+  color:rgb(167, 88, 88, 0.7);
+}
+
+.input {
+  margin-top: 7px;
+  border-radius: 25px;
+  background-color:rgb(243, 134, 122, 0.7) ;
+  width: 85%;
+  border-style: groove;
+  border-width: 1px;
+  margin-bottom: 5px;
+}
+
+.btn-default {
+  margin-top: 7px;
+  color:rgb(167, 88, 88);
+  background-color: rgb(243, 134, 122, 0.8);
+}
+
+[data-toggle="collapse"].collapsed .if-not-collapsed {
+  display: none;
+}
+
+[data-toggle="collapse"]:not(.collapsed) .if-collapsed {
+  display: none;
+}

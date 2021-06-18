@@ -1,0 +1,52 @@
+
+<p>
+  <button type="button" class="btn btn-default"
+  (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+  data-toggle="collapse"
+  aria-controls="collapseExample" *ngIf="isCollapsed">
+  Afficher les commentaires
+  </button>
+  <button type="button" class="btn btn-default"
+  (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+  data-toggle="collapse"
+  aria-controls="collapseExample" *ngIf="!isCollapsed">
+  Fermer les commentaires
+  </button>
+</p>
+
+<div id="collapseComments" #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" class="comment-section">
+<div *ngFor="let comment of comments" >
+    <div class="from">
+      From {{comment.username}} at {{comment.day}}/{{comment.month}}/{{comment.year}} :
+    </div>
+    <div class="comments">
+      « {{comment.message}} »
+    </div>
+</div>
+
+<form
+  *ngIf="users"
+  class="card-body"
+  (ngSubmit)=onSubmit()
+>
+  <label
+  class="comment-form"
+  for="message">You can comment here :</label>
+  <br>
+  <input
+    type="text"
+    name="message"
+    [(ngModel)]="message"
+    id="message"
+    placeholder="Add Comment"
+    maxlength="75"
+    class="input"
+  />
+  <br>
+  <input
+    type="submit"
+    value="Save Comment"
+    class="btn btn-default"
+  >
+</form>
+</div>

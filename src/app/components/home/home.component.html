@@ -1,0 +1,12 @@
+<h3></h3>
+<ngb-carousel *ngIf="images" [showNavigationIndicators]="showNavigationIndicators">
+  <ng-template ngbSlide *ngFor="let image of images">
+    <div class="picsum-img-wrapper">
+      <img [src]="image" alt="Random slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>Something here and there</h3>
+      <p>Time to appreciate</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
